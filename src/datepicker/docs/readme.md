@@ -28,7 +28,7 @@ All settings can be provided as attributes in the `uib-datepicker` or globally c
  * `date-disabled (date, mode)`
  	_(Default: null)_ :
  	An optional expression to disable visible options based on passing date and current mode _(day|month|year)_.
- 	
+
  * `custom-class (date, mode)`
  	_(Default: null)_ :
  	An optional expression to add classes based on passing date and current mode _(day|month|year)_. 	
@@ -79,7 +79,7 @@ All settings can be provided as attributes in the `uib-datepicker` or globally c
 
  * `year-range`
  	_(Default: 20)_ :
- 	Number of years displayed in year selection. 
+ 	Number of years displayed in year selection.
 
  * `shortcut-propagation`
   _(Default: false)_ :
@@ -155,3 +155,6 @@ Depending on datepicker's current mode, the date may refer either to day, month 
  * `Ctrl`+`Up`: Move to an upper mode.
  * `Ctrl`+`Down`: Move to a lower mode.
  * `Esc`: Will close popup, and move focus to the input.
+
+**Known Issues**
+If the date a user enters falls outside of the min-/max-date range, a `date-disabled` validation error will show on the form.
